@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-100 hover:text-white transition-colors"
+                className="text-3xl text-gray-300 hover:text-white transition-colors"
               >
                 Features
               </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-100 hover:text-white transition-colors"
+                className="text-3xl text-gray-300 hover:text-white transition-colors"
               >
                 Marketplace
               </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-100 hover:text-white transition-colors"
+                className="text-3xl text-gray-300 hover:text-white transition-colors"
               >
                 Contact
               </Link>
