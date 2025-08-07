@@ -88,7 +88,7 @@ const Navbar = () => {
         className="fixed top-0 left-0 w-full md:hidden min-h-screen bg-transparent z-50 flex flex-col"
       >
         {/* Menu Header */}
-        <div className="flex justify-between bg-[#121212] items-center p-6 border-b border-gray-600">
+        <div className="flex justify-between bg-[#121212] items-center p-6">
           <h1 className="font-md text-white text-xl">Auvra AI</h1>
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -99,12 +99,12 @@ const Navbar = () => {
         </div>
 
         {/* Menu Content */}
-        <div className="flex-1 flex flex-col justify-center items-center bg-[#121212] gap-8 px-6">
+        <div className="flex-1 flex flex-col justify-center mt-0 items-center bg-[#121212] gap-8 pt-0 px-6">
           <ul className="flex flex-col gap-8 text-center">
             <li>
               <Link
                 href="/"
-                className="text-2xl text-gray-300 hover:text-white transition-colors"
+                className="text-3xl text-gray-100 hover:text-white transition-colors"
               >
                 Features
               </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-2xl text-gray-300 hover:text-white transition-colors"
+                className="text-3xl text-gray-100 hover:text-white transition-colors"
               >
                 Marketplace
               </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-2xl text-gray-300 hover:text-white transition-colors"
+                className="text-3xl text-gray-100 hover:text-white transition-colors"
               >
                 Contact
               </Link>
