@@ -30,7 +30,7 @@ const Hero = () => {
             <p className="text-lg text-gray-300">
               Text-to-speech is just the beginning.{" "}
               <span className="relative">
-                <span className="font-bold">Auvra's</span>
+                <span className="font-bold">Auvra&apos;s</span>
               </span>{" "}
               node-based generative workflows empower you to transcend simple
               voice generation.
@@ -46,7 +46,7 @@ const Hero = () => {
                 layout
               >
                 <Play size={18} className="text-gray-200" />
-                {""}Start Creating
+                Start Creating
                 <motion.span
                   className="text-lg font-extralight"
                   variants={{
@@ -81,4 +81,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;
