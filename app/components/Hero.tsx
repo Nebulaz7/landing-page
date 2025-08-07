@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Play, Volume2 } from "lucide-react";
+import { Play, Volume2, ChevronRight } from "lucide-react";
 import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
@@ -41,7 +41,7 @@ const Hero = () => {
             {/* Cta Buttons */}
             <div className="flex items-center gap-4 md:gap-6">
               <motion.button
-                className="bg-purple-600 text-[12px] text-white px-3 py-1 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-purple-700 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-purple-600 text-[12px] text-white px-3 py-1 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-purple-700/80 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover="hover"
                 variants={{
                   hover: { scale: 1.0, y: -2 },
@@ -59,12 +59,12 @@ const Hero = () => {
                     },
                   }}
                 >
-                  →
+                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 " />
                 </motion.span>
               </motion.button>
 
               <motion.button
-                className="bg-[#222222] text-[12px] text-white border-2 border-gray-200 px-3 py-1.5 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-[#333333] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-[#222222] text-[12px] text-white border-2 border-gray-200 px-3 py-1.5 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-[#444444] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover={{ y: -2 }}
                 layout
               >
