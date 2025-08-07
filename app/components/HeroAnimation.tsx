@@ -20,9 +20,9 @@ const orbitingNodes = Array.from({ length: 8 }, (_, i) => {
   const y = 50 + Math.sin(angle) * 35;
 
   const icons = [
-    <TextSelect className="w-4 h-4 text-white" />,
-    <Brain className="w-4 h-4 text-white" />,
-    <Heart className="w-4 h-4 text-white" />,
+    <TextSelect key="text-select" className="w-4 h-4 text-white" />,
+    <Brain key="brain" className="w-4 h-4 text-white" />,
+    <Heart key="heart" className="w-4 h-4 text-white" />,
   ];
 
   return (
