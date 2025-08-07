@@ -31,6 +31,25 @@ body {
   background-size: 20px 20px;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9cccf;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #959799;
+}
+
 .hero-font {
   font-family: "Poppins", sans-serif;
   color: var(--foreground);

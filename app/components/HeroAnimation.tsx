@@ -20,9 +20,9 @@ const orbitingNodes = Array.from({ length: 8 }, (_, i) => {
   const y = 50 + Math.sin(angle) * 35;
 
   const icons = [
-    <TextSelect key="text-select" className="w-4 h-4 text-white" />,
-    <Brain key="brain" className="w-4 h-4 text-white" />,
-    <Heart key="heart" className="w-4 h-4 text-white" />,
+    <TextSelect key="text-select" className="w-5 h-5 text-white" />,
+    <Brain key="brain" className="w-5 h-5 text-white" />,
+    <Heart key="heart" className="w-5 h-5 text-white" />,
   ];
 
   return (
@@ -71,7 +71,7 @@ const AuvraHeroAnimation = () => {
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 2 }}
       className="relative w-full h-[32rem] flex items-center justify-center overflow-hidden"
     >
       {glowCircles}
@@ -99,7 +99,7 @@ const AuvraHeroAnimation = () => {
           <div className="relative w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full p-[2px]">
             <div className="w-full h-full bg-purple rounded-full flex items-center justify-center">
               <div className="relative">
-                <Headphones className="w-8 h-8 text-white" />
+                <Headphones className="w-10 h-10 text-white" />
                 <motion.div
                   className="absolute -inset-2"
                   animate={{ opacity: [0, 1, 0], scale: [0.8, 1.2, 0.8] }}
@@ -109,7 +109,7 @@ const AuvraHeroAnimation = () => {
                     ease: "easeOut",
                   }}
                 >
-                  <AudioLines className="w-12 h-12 text-white/30" />
+                  <AudioLines className="w-14 h-14 text-white/30" />
                 </motion.div>
               </div>
             </div>

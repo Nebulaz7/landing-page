@@ -6,7 +6,7 @@ import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center min-h-[80vh] px-6 py-1">
+    <section className="flex items-center justify-center min-h-[80vh] px-6 py-1 pt-18 md:pt-20 lg:pt-24">
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
@@ -14,13 +14,13 @@ const Hero = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             className="pl-6 space-y-6"
           >
             <h1 className="text-5xl lg:text-7xl font-light hero-font leading-tight mb-6">
               Why Just{" "}
               <span className="relative">
-                <span className="underline-text">Generate</span>
+                <span className="underline-text font-bold">Generate</span>
               </span>{" "}
               When You Can{" "}
               <span className="relative">
@@ -30,10 +30,9 @@ const Hero = () => {
             <p className="text-lg text-gray-300">
               Text-to-speech is just the beginning.{" "}
               <span className="relative">
-                <span className="font-bold">Auvra&apos;s</span>
+                <span className="font-bold">Auvra's node-based generative</span>
               </span>{" "}
-              node-based generative workflows empower you to transcend simple
-              voice generation.
+              workflows empower you to transcend simple voice generation.
             </p>
             {/* Cta Buttons */}
             <div className="flex items-center gap-6">
