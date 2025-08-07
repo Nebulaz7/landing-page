@@ -32,7 +32,9 @@ const Hero = () => {
             <p className="md:text-lg text-gray-300">
               Text-to-speech is just the beginning.{" "}
               <span className="relative">
-                <span className="font-bold">Auvra's node-based generative</span>
+                <span className="font-bold">
+                  Auvra&apos;s node-based generative
+                </span>
               </span>{" "}
               workflows empower you to transcend simple voice generation.
             </p>
