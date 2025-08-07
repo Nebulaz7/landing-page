@@ -71,7 +71,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(true)}
-          className="md:hidden lg:hidden text-white p-2"
+          className="md:hidden lg:hidden text-white p-2 cursor-pointer"
         >
           <Menu size={24} />
         </button>
@@ -89,7 +89,7 @@ const Navbar = () => {
           <h1 className="font-md text-white text-xl">Auvra AI</h1>
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="text-white p-2"
+            className="text-white p-2 cursor-pointer"
           >
             <X size={24} />
           </button>
@@ -125,10 +125,10 @@ const Navbar = () => {
           </ul>
 
           <div className="flex flex-col gap-4 w-full max-w-xs mt-8">
-            <button className="border-2 border-gray-200 text-gray-100 px-4 py-2 rounded-2xl hover:text-purple-500 hover:border-purple-400 transition-colors">
+            <button className="border-2 border-gray-200 text-gray-100 px-4 py-2 cursor-pointer rounded-2xl hover:text-purple-500 hover:border-purple-400 transition-colors">
               Log in
             </button>
-            <button className="bg-purple-600 text-white px-4 py-2 rounded-2xl hover:bg-purple-700 transition-colors">
+            <button className="bg-purple-600 text-white px-4 py-2 cursor-pointer rounded-2xl hover:bg-purple-700 transition-colors">
               Get Started
             </button>
           </div>
