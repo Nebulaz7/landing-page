@@ -6,7 +6,7 @@ import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center min-h-[80vh] px-6 py-1 pt-18 md:pt-20 lg:pt-24">
+    <section className="flex items-center justify-center min-h-[80vh] lg:px-6 py-1 pt-24 md:pt-20 lg:pt-24">
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
@@ -20,14 +20,16 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-7xl font-light hero-font leading-tight mb-6">
               Why Just{" "}
               <span className="relative">
+                <br />
                 <span className="underline-text font-bold">Generate</span>
+                <br />
               </span>{" "}
               When You Can{" "}
               <span className="relative">
                 <span className="highlight-text">Create</span>?
               </span>
             </h1>
-            <p className="text-lg text-gray-300">
+            <p className="md:text-lg text-gray-300">
               Text-to-speech is just the beginning.{" "}
               <span className="relative">
                 <span className="font-bold">Auvra's node-based generative</span>
@@ -35,16 +37,16 @@ const Hero = () => {
               workflows empower you to transcend simple voice generation.
             </p>
             {/* Cta Buttons */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 md:gap-6">
               <motion.button
-                className="bg-purple-600 text-white px-4 cursor-pointer py-2 rounded-2xl flex items-center gap-2 hover:bg-purple-700 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-purple-600 text-[12px] text-white px-3 py-1 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-purple-700 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover="hover"
                 variants={{
                   hover: { scale: 1.0, y: -2 },
                 }}
                 layout
               >
-                <Play size={18} className="text-gray-200" />
+                <Play className="text-gray-200 w-[14px] h-[14px] md:w-[18px] md:h[18px]" />
                 Start Creating
                 <motion.span
                   className="text-lg font-extralight"
@@ -60,12 +62,12 @@ const Hero = () => {
               </motion.button>
 
               <motion.button
-                className="bg-[#222222] text-white border-2 border-gray-200 px-4 cursor-pointer py-2 rounded-2xl flex items-center gap-2 hover:bg-[#333333] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-[#222222] text-[12px] text-white border-2 border-gray-200 px-3 py-1.5 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-[#333333] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover={{ y: -2 }}
                 layout
               >
-                <Volume2 size={18} className="text-gray-300" /> Experience the
-                Demo
+                <Volume2 className="text-gray-300 w-[14px] h-[14px] md:w-[18px] md:h[18px]" />{" "}
+                Experience the Demo
               </motion.button>
             </div>
           </motion.div>

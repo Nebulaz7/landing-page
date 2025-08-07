@@ -82,7 +82,7 @@ const Navbar = () => {
         initial={{ x: "-100%" }}
         animate={{ x: isMenuOpen ? 0 : "-100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 left-0 w-full min-h-screen bg-transparent z-50 flex flex-col"
+        className="fixed top-0 left-0 w-full md:hidden min-h-screen bg-transparent z-50 flex flex-col"
       >
         {/* Menu Header */}
         <div className="flex justify-between bg-[#121212] items-center p-6 border-b border-gray-600">
