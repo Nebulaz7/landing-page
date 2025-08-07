@@ -6,7 +6,7 @@ import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center h-[80vh] px-6 py-1">
+    <section className="flex items-center justify-center min-h-[80vh] px-6 py-1">
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
@@ -72,7 +72,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Right Side - SVG (Hidden on mobile) */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:pr-4">
             {/* Your custom SVG animation goes here */}
             <AuvraHeroAnimation />
           </div>
