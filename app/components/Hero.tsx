@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, Volume2 } from "lucide-react";
+import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
@@ -9,7 +10,13 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
-          <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="pl-6 space-y-6"
+          >
             <h1 className="text-5xl lg:text-7xl font-light hero-font leading-tight mb-6">
               Why Just{" "}
               <span className="relative">
@@ -54,20 +61,20 @@ const Hero = () => {
               </motion.button>
 
               <motion.button
-                className="bg-transparent text-white border-2 border-gray-200 px-4 cursor-pointer py-2 rounded-2xl flex items-center gap-2 hover:bg-[#333333] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-[#222222] text-white border-2 border-gray-200 px-4 cursor-pointer py-2 rounded-2xl flex items-center gap-2 hover:bg-[#333333] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                whileHover={{ y: -2 }}
                 layout
               >
-                Experience the Demo
+                <Volume2 size={18} className="text-gray-300" /> Experience the
+                Demo
               </motion.button>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side - SVG (Hidden on mobile) */}
           <div className="hidden lg:block">
             {/* Your custom SVG animation goes here */}
-            <div className="w-full h-96 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">SVG Placeholder</span>
-            </div>
+            <AuvraHeroAnimation />
           </div>
         </div>
       </div>
