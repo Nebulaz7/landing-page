@@ -6,7 +6,7 @@ import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center min-h-[80vh] lg:px-6 py-1 pt-20 md:pt-20 lg:pt-24">
+    <section className="flex items-center justify-center min-h-[95vh] lg:px-6 py-1 pt-20 md:pt-20 lg:pt-24">
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
@@ -22,7 +22,7 @@ const Hero = () => {
               <span className="relative">
                 <br />
                 <span className="underline-text font-bold">Generate</span>
-                <br />
+                <br className="md:hidden" />
               </span>{" "}
               When You Can{" "}
               <span className="relative">
@@ -41,14 +41,14 @@ const Hero = () => {
             {/* Cta Buttons */}
             <div className="flex items-center gap-4 md:gap-6">
               <motion.button
-                className="bg-purple-600 text-[12px] text-white px-3 py-1.5 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-purple-700/80 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-purple-600 text-[12px] text-white md:text-[14px] px-4 py-2 md:px-6 cursor-pointer md:py-3 rounded-2xl flex items-center gap-1 hover:bg-purple-700/80 shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover="hover"
                 variants={{
                   hover: { scale: 1.0, y: -2 },
                 }}
                 layout
               >
-                <Play className="text-gray-200 w-[14px] h-[14px] md:w-[18px] md:h[18px]" />
+                <Play className="text-gray-200 w-[14px] h-[14px] md:w-[20px] md:h-[20px]" />
                 Start Creating
                 <motion.span
                   className="text-lg font-extralight"
@@ -64,11 +64,11 @@ const Hero = () => {
               </motion.button>
 
               <motion.button
-                className="bg-[#222222] text-[12px] text-white border-2 border-gray-200 px-3 py-1.5 md:px-4 cursor-pointer md:py-2 rounded-2xl flex items-center gap-2 hover:bg-[#444444] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
+                className="bg-[#222222] text-[12px] md:text-[14px] text-white border-2 border-gray-200 px-4 py-2 md:px-6 cursor-pointer md:py-3 rounded-2xl flex items-center gap-2 hover:bg-[#444444] shadow-sm shadow-purple-400/50  hover:shadow-md hover:shadow-purple-400/50 transition duration-100"
                 whileHover={{ y: -2 }}
                 layout
               >
-                <Volume2 className="text-gray-300 w-[14px] h-[14px] md:w-[18px] md:h[18px]" />{" "}
+                <Volume2 className="text-gray-300 w-[14px] h-[14px] md:w-[20px] md:h-[20px]" />{" "}
                 Experience the Demo
               </motion.button>
             </div>

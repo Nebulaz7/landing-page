@@ -35,6 +35,11 @@ const Navbar = () => {
           </li>
           <li>
             <MotionLink href="/" className="hover:text-white" layout>
+              Team
+            </MotionLink>
+          </li>
+          <li>
+            <MotionLink href="/" className="hover:text-white" layout>
               Contact
             </MotionLink>
           </li>
@@ -99,12 +104,12 @@ const Navbar = () => {
         </div>
 
         {/* Menu Content */}
-        <div className="flex-1 flex flex-col justify-center mt-0 items-center bg-[#121212] gap-8 pt-0 px-6">
-          <ul className="flex flex-col gap-8 text-center">
+        <div className="flex-1 bg-[#121212] pt-4">
+          <ul className="flex flex-col gap-6 pl-6">
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-300 hover:text-white transition-colors"
+                className="text-2xl text-gray-300 hover:text-white transition-colors"
               >
                 Features
               </Link>
@@ -112,7 +117,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-300 hover:text-white transition-colors"
+                className="text-2xl text-gray-300 hover:text-white transition-colors"
               >
                 Marketplace
               </Link>
@@ -120,14 +125,22 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-3xl text-gray-300 hover:text-white transition-colors"
+                className="text-2xl text-gray-300 hover:text-white transition-colors"
+              >
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="text-2xl text-gray-300 hover:text-white transition-colors"
               >
                 Contact
               </Link>
             </li>
           </ul>
 
-          <div className="flex flex-col gap-4 w-full max-w-xs mt-8">
+          <div className="flex flex-col gap-4 px-6 mt-12">
             <button className="border-2 border-gray-200 text-gray-100 px-4 py-2 cursor-pointer rounded-2xl hover:text-purple-500 hover:border-purple-400 transition-colors">
               Log in
             </button>
