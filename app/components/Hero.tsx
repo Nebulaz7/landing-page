@@ -6,7 +6,7 @@ import AuvraHeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center min-h-[95vh] lg:px-6 py-1 pt-20 md:pt-20 lg:pt-24">
+    <section className="flex items-center justify-center min-h-[95vh] lg:px-6 py-1 pt-18 md:pt-20 lg:pt-24">
       <div className="max-w-7xl mx-auto w-full hero-font">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
