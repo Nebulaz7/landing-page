@@ -7,13 +7,7 @@
 :root {
   --background: #121212;
   --foreground: #f0f0f0;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --accent: #17a2b8;
-  --error: #dc3545;
-  --warning: #ffc107;
-  --success: #28a745;
-  --info: #17a2b8;
+  --primary: #9810fa;
 }
 
 body {
