@@ -21,11 +21,16 @@ Most requests are processed in under 200ms, making it perfect for live applicati
   return (
     <section id="features" aria-labelledby="features-label" className="py-12">
       {/* Feature Intro */}
-      <div className="flex justify-center mb-8">
-        <span className="inline-flex px-3 font-light text-3xl lg:text-5xl hero-font leading-tight mb-6">
-          The Future of&nbsp;
-          <span className="highlight-text"> Voice Technology</span>
-        </span>
+      <div className="mb-10 px-4">
+        <h2
+          id="features-label"
+          className="hero-font font-light leading-tight text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mx-auto max-w-5xl tracking-tight"
+        >
+          The Future of
+          <span className="highlight-text inline-block ml-2 lg:ml-4">
+            Voice Technology
+          </span>
+        </h2>
       </div>
       <div className="flex flex-col lg:flex-row gap-8 items-center px-5 justify-center">
         <div className="px-3 pt-5 flex-1 w-full max-w-xl">
@@ -55,7 +60,8 @@ Most requests are processed in under 200ms, making it perfect for live applicati
                   <motion.span
                     aria-hidden="true"
                     className="inline-block w-2 -mb-[2px] bg-gradient-to-r from-indigo-400 to-purple-400"
-                    animate={{ opacity: [0, 1, 0] }}
+                    whileInView={{ opacity: [0, 1, 0] }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.9, repeat: Infinity }}
                     style={{
                       height: "1em",
