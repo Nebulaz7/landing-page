@@ -2,6 +2,21 @@
 import React, { useEffect, useState } from "react";
 import { Mic } from "lucide-react";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
+
+// Define variants for the blinking cursor (typed)
+const cursorVariants: Variants = {
+  hidden: { opacity: 0 },
+  blink: {
+    opacity: [0, 1, 0],
+    transition: {
+      duration: 0.9,
+      repeat: Infinity, // loop forever
+      repeatType: "loop", // helps some versions' typings
+      ease: "linear",
+    },
+  },
+};
 
 const Feature = () => {
   // Typewriter setup
@@ -64,13 +79,11 @@ Most requests are processed in under 200ms, making it perfect for live applicati
                   <motion.span
                     aria-hidden="true"
                     className="inline-block w-2 -mb-[2px] bg-gradient-to-r from-indigo-400 to-purple-400"
-                    whileInView={{ opacity: [0, 1, 0] }}
+                    variants={cursorVariants}
+                    initial="hidden"
+                    whileInView="blink"
                     viewport={{ once: true }}
-                    transition={{ duration: 0.9, repeat: Infinity }}
-                    style={{
-                      height: "1em",
-                      marginLeft: "2px",
-                    }}
+                    style={{ height: "1em", marginLeft: "2px" }}
                   />
                 </code>
               </pre>
