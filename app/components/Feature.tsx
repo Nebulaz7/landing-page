@@ -19,12 +19,16 @@ Most requests are processed in under 200ms, making it perfect for live applicati
   const displayed = fullText.slice(0, visibleChars);
 
   return (
-    <section id="features" aria-labelledby="features-label" className="py-12">
+    <section
+      id="features"
+      aria-labelledby="features-label"
+      className="py-6 sm:py-12"
+    >
       {/* Feature Intro */}
       <div className="mb-10 px-4">
         <h2
           id="features-label"
-          className="hero-font font-light leading-tight text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mx-auto max-w-5xl tracking-tight"
+          className="hero-font font-bold sm:font-light leading-tight text-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mx-auto max-w-5xl tracking-tight"
         >
           The Future of
           <span className="highlight-text inline-block ml-2 lg:ml-4">
